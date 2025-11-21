@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodIt Teams — Baromètre émotionnel pour équipes tech & managers</title>
+    <meta name="description" content="MoodIt Teams permet aux collaborateurs d'exprimer anonymement leur humeur et donne aux managers un tableau de bord émotionnel pour détecter les signaux faibles et agir avant qu'il ne soit trop tard. Réservez une démo.">
+    <meta name="keywords" content="mood tracking, équipe tech, management, rétrospective, bien-être au travail, signaux faibles">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">MoodIt Teams</div>
+            <div class="nav-actions">
+                <a href="#pricing" class="nav-link">Tarifs</a>
+                <a href="#demo" class="btn-secondary">Réserver une démo</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Détectez les signaux faibles avant qu'ils ne coûtent cher à votre équipe
+                    </h1>
+                    <p class="hero-lead">
+                        MoodIt Teams transforme les émotions silencieuses en actions concrètes. Un baromètre anonyme pour vos équipes, des insights actionnables pour vos managers.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#demo" class="btn-primary btn-large" data-modal="demo" aria-label="Réserver une démo personnalisée - Formulaire">Réserver une démo</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-label="Aperçu du dashboard MoodIt Teams">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="mockup-title">Graphique température & humeur des équipes</span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mood-chart">
+                                <div class="chart-header">
+                                    <div class="chart-title">Température de la team & humeur</div>
+                                </div>
+                                <div class="chart-container">
+                                    <div class="chart-y-axis">
+                                        <span>100°</span>
+                                        <span>75°</span>
+                                        <span>50°</span>
+                                        <span>25°</span>
+                                        <span>0°</span>
+                                    </div>
+                                    <div class="chart-area">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="--height: 80%; --mood: 0.8" data-emoji="😊">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">😊</div>
+                                                <div class="bar-label">Content</div>
+                                            </div>
+                                            <div class="chart-bar" style="--height: 60%; --mood: 0.6" data-emoji="😐">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">😐</div>
+                                                <div class="bar-label">Neutre</div>
+                                            </div>
+                                            <div class="chart-bar" style="--height: 90%; --mood: 0.9" data-emoji="😄">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">😄</div>
+                                                <div class="bar-label">Joyeux</div>
+                                            </div>
+                                            <div class="chart-bar" style="--height: 50%; --mood: 0.5" data-emoji="😕">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">😕</div>
+                                                <div class="bar-label">Inquiet</div>
+                                            </div>
+                                            <div class="chart-bar" style="--height: 70%; --mood: 0.7" data-emoji="🙂">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">🙂</div>
+                                                <div class="bar-label">Satisfait</div>
+                                            </div>
+                                            <div class="chart-bar" style="--height: 85%; --mood: 0.85" data-emoji="😊">
+                                                <div class="bar-fill"></div>
+                                                <div class="bar-emoji">😊</div>
+                                                <div class="bar-label">Content</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart-legend">
+                                    <div class="legend-item">
+                                        <span class="legend-color" style="background: #EF4444"></span>
+                                        <span>Basse</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color" style="background: #F59E0B"></span>
+                                        <span>Moyenne</span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color" style="background: #10B981"></span>
+                                        <span>Élevée</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <h2 class="section-title problem-title">Les signaux faibles passent inaperçus jusqu'à ce qu'il soit trop tard</h2>
+            <div class="problem-content">
+                <div class="problem-cards">
+                    <div class="problem-card">
+                        <div class="problem-icon warning">⚠️</div>
+                        <h3 class="problem-card-title">Départs silencieux</h3>
+                        <p class="problem-card-desc">Un dev clé démissionne sans prévenir. Coût : 6-9 mois de salaire + retard projet.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon decline">📉</div>
+                        <h3 class="problem-card-title">Burnout invisible</h3>
+                        <p class="problem-card-desc">La fatigue s'accumule en silence. Détection tardive = arrêt maladie + réorganisation.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon silence">💬</div>
+                        <h3 class="problem-card-title">Frustrations non exprimées</h3>
+                        <p class="problem-card-desc">Les équipes ne parlent pas en rétro. Le désalignement s'installe progressivement.</p>
+                    </div>
+                </div>
+                <div class="problem-chart">
+                    <div class="chart-card">
+                        <div class="chart-item">
+                            <div class="chart-label">Sans MoodIt</div>
+                            <div class="chart-bar-container">
+                                <div class="chart-bar negative" style="--width: 85%">
+                                    <span class="chart-percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="chart-desc">de crises non détectées</div>
+                        </div>
+                        <div class="chart-item">
+                            <div class="chart-label">Avec MoodIt</div>
+                            <div class="chart-bar-container">
+                                <div class="chart-bar positive" style="--width: 87%">
+                                    <span class="chart-percentage">87%</span>
+                                </div>
+                            </div>
+                            <div class="chart-desc">de crises évitées</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Comment ça marche ?</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Setup en 5 minutes</h3>
+                        <p class="step-description">Connectez Slack ou Teams. Vos équipes reçoivent 1 question par jour (10 secondes pour répondre). Aucune installation. Aucune formation.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">MoodIt analyse en temps réel</h3>
+                        <p class="step-description">Scoring émotionnel automatique, détection de signaux faibles, identification des variations et tendances sur chaque sprint.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Rapport actionnable</h3>
+                        <p class="step-description">Recevez un dashboard clair avec recommandations concrètes pour vos rétros, ajustements de sprint et 1-to-1 à planifier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <h2 class="section-title">Nos fonctionnalités clés</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🕶️</div>
+                    <h3 class="feature-title">Check‑in anonyme (10s)</h3>
+                    <p class="feature-description">7 émotions + micro-text optional</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Dashboard d'équipe</h3>
+                    <p class="feature-description">Courbes, tendances, alertes, segment par squad</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3 class="feature-title">Détection des signaux faibles</h3>
+                    <p class="feature-description">Fatigue, frustration, désalignement</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3 class="feature-title">Recommandations d'action</h3>
+                    <p class="feature-description">Scripts pour 1:1, sujets de rétro, quick wins</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3 class="feature-title">Integrations</h3>
+                    <p class="feature-description">Slack, Teams, Jira, Notion, Google Workspace</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Confidentialité & RGPD</h3>
+                    <p class="feature-description">Données anonymisées, hébergé en Europe</p>
+                </div>
+            </div>
+            <div class="solution-cta">
+                <a href="#demo" class="btn-primary btn-large">Réserver une démo personnalisée</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choisissez votre plan</h2>
+            <p class="section-lead">Starter, Scale ou Entreprise — trouvez l'offre qui vous correspond</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-name">Starter</h3>
+                    <p class="pricing-desc">Pour les petites équipes</p>
+                    <div class="pricing-price">
+                        <span class="price-amount">5€</span>
+                        <span class="price-period">/ utilisateur / mois</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span> Check-in quotidien</li>
+                        <li><span class="check-icon">✓</span> Dashboard de base</li>
+                        <li><span class="check-icon">✓</span> Support email</li>
+                        <li><span class="check-icon">✓</span> Intégrations Slack & Teams</li>
+                    </ul>
+                    <a href="#demo" class="btn-secondary btn-block">Commencer</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Le plus populaire</div>
+                    <h3 class="pricing-name">Scale</h3>
+                    <p class="pricing-desc">Pour les équipes en croissance</p>
+                    <div class="pricing-price">
+                        <span class="price-amount">250€</span>
+                        <span class="price-period">/mois</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span> Jusqu'à 50 membres</li>
+                        <li><span class="check-icon">✓</span> Check-in quotidien</li>
+                        <li><span class="check-icon">✓</span> Dashboard avancé</li>
+                        <li><span class="check-icon">✓</span> Détection signaux faibles</li>
+                        <li><span class="check-icon">✓</span> Support prioritaire</li>
+                        <li><span class="check-icon">✓</span> Toutes les intégrations</li>
+                    </ul>
+                    <a href="#demo" class="btn-primary btn-block">Commencer</a>
+                </div>
+                <div class="pricing-card">
+                    <h3 class="pricing-name">Entreprise</h3>
+                    <p class="pricing-desc">Onboarding & accompagnement inclus</p>
+                    <div class="pricing-price">
+                        <span class="price-amount">Sur mesure</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><span class="check-icon">✓</span> Toutes les fonctionnalités</li>
+                        <li><span class="check-icon">✓</span> Intégrations personnalisées</li>
+                        <li><span class="check-icon">✓</span> Support dédié 24/7</li>
+                        <li><span class="check-icon">✓</span> Formation équipe</li>
+                        <li><span class="check-icon">✓</span> SLA garanti</li>
+                        <li><span class="check-icon">✓</span> Onboarding personnalisé</li>
+                    </ul>
+                    <a href="#demo" class="btn-secondary btn-block">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <h2 class="modal-title">Réserver une démo personnalisée</h2>
+            <form class="demo-form" id="demo-form">
+                <div class="form-group">
+                    <label for="firstname">Prénom <span class="required">*</span></label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" name="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Société <span class="required">*</span></label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="team-size">Taille de l'équipe <span class="required">*</span></label>
+                    <select id="team-size" name="team-size" required>
+                        <option value="">Sélectionnez...</option>
+                        <option value="1-10">1-10 personnes</option>
+                        <option value="11-25">11-25 personnes</option>
+                        <option value="26-50">26-50 personnes</option>
+                        <option value="51-100">51-100 personnes</option>
+                        <option value="100+">100+ personnes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="role">Rôle <span class="required">*</span></label>
+                    <select id="role" name="role" required>
+                        <option value="">Sélectionnez...</option>
+                        <option value="manager">Manager</option>
+                        <option value="tech-lead">Tech Lead</option>
+                        <option value="hr">HR</option>
+                        <option value="ceo">CEO</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="demo-type">Type de démo <span class="required">*</span></label>
+                    <select id="demo-type" name="demo-type" required>
+                        <option value="">Sélectionnez...</option>
+                        <option value="live">Live 30min</option>
+                        <option value="walkthrough">Walkthrough 15min</option>
+                        <option value="trial">Essai 14j</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary btn-large">Réserver ma démo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Problème ayant duré 30 minutes en démo, qui aurait pu être résolu en one-to-one en amont ; avec un outil comme MoodIt Teams, ce problème aurait pu être évité."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ST</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Stephane</div>
+                            <div class="testimonial-role">Tech Lead</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"Mes 1:1 sont 10x plus efficaces. Je ne navigue plus à l'aveugle, je sais exactement où investir mon temps."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MP</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Marc P.</div>
+                            <div class="testimonial-role">Product Manager</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"L'anonymat change tout. Les gens osent enfin dire ce qu'ils pensent. Notre culture s'est transformée."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JD</div>
+                        <div class="testimonial-info">
+                            <div class="testimonial-name">Julie D.</div>
+                            <div class="testimonial-role">Product Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-title">À propos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#solution">Notre solution</a></li>
+                        <li><a href="#how-it-works">Comment ça marche</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Ressources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#resources">Ressources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rgpd">RGPD & Confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Intégrations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#integrations">Slack, Teams, Jira</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#demo">Sales</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoodIt Teams. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

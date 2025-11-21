@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci — MoodIt Teams</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .thank-you {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-xl);
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+        }
+        .thank-you-content {
+            max-width: 600px;
+            text-align: center;
+            background: white;
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+        .thank-you-icon {
+            font-size: 64px;
+            margin-bottom: var(--spacing-lg);
+        }
+        .thank-you-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        .thank-you-text {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.7;
+        }
+        .thank-you-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+        .thank-you-actions a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">
+        <div class="thank-you-content">
+            <div class="thank-you-icon">✓</div>
+            <h1 class="thank-you-title">Merci pour votre demande !</h1>
+            <p class="thank-you-text">
+                Nous avons bien reçu votre demande de démo. Notre équipe va vous contacter dans les plus brefs délais 
+                pour planifier votre session personnalisée.
+            </p>
+            <div class="thank-you-actions">
+                <a href="#" class="btn-primary btn-large">Planifier ma démo (Calendly)</a>
+                <a href="#" class="btn-secondary">Voir la vidéo de démo (1 min)</a>
+                <a href="#" class="btn-link">Télécharger la brochure PDF</a>
+            </div>
+            <p style="margin-top: var(--spacing-xl); font-size: 14px; color: var(--text-light);">
+                En attendant, découvrez comment MoodIt Teams peut transformer la dynamique de votre équipe.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
